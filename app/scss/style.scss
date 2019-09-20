@@ -358,3 +358,42 @@
         width: 86px;
     }
 }
+
+//end-adv
+//start author
+.author {
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__box {
+        max-width: 650px;
+        min-height: 215px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+    }
+    &__title {
+        margin-right: 45px;
+        max-width: 270px;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 36px;
+        span {
+            @include f700;
+        }
+    }
+    &__link {
+        color: #263238;
+        font-size: 18px;
+        padding: 14px 40px;
+        font-weight: 400;
+        line-height: 36px;
+        background-color: #fff;
+    }
+}
