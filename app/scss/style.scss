@@ -1738,14 +1738,16 @@ button .icon-unsorted {
 //end product-one
 //page-404
 .page-404__wrapper,
-.about__wrapper {
+.about__wrapper,
+.contact__wrapper {
     border: 1px solid #d7d7d7;
     background-color: #fff;
     margin-bottom: 150px;
 }
 
 .page-404__head,
-.about__head {
+.about__head,
+.contact__head {
     color: #444444;
     font-size: 24px;
     @include f500;
@@ -1823,6 +1825,130 @@ button .icon-unsorted {
     }
     p {
         margin-bottom: 40px;
+    }
+}
+
+//end about
+//start contacts
+.contact__head {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.contact__inner {
+    padding: 40px;
+    border-top: 1px solid #d7d7d7;
+}
+
+.contact__map {
+    margin-bottom: 50px;
+    iframe {
+        width: 100%;
+        height: 415px;
+    }
+}
+
+.contact__box {
+    display: flex;
+}
+
+.contact__info {
+    margin-right: 30px;
+    max-width: 330px;
+    width: 100%;
+}
+
+.contact__info-item {
+    margin-bottom: 30px;
+}
+
+.contact__info-title {
+    padding-bottom: 20px;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+    color: $bg;
+    padding-left: 40px;
+    &::after {
+        content: "";
+        width: 44px;
+        height: 4px;
+        position: absolute;
+        left: 40px;
+        background-color: $green;
+        bottom: 0;
+    }
+    &::before {
+        color: $green;
+        font-family: 'icomoon';
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.contact__info-content {
+    margin-top: 15px;
+    color: #707070;
+    padding-left: 40px;
+    max-width: 230px;
+}
+
+.contact__form-title {
+    color: #333333;
+    @include f500;
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+.contact__form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__form {
+    width: 100%;
+}
+
+.contact__form {
+    input {
+        border: none;
+        height: 43px;
+        padding: 0 17px;
+        display: block;
+        width: 350px;
+        background-color: #f1f4f5;
+        margin-bottom: 30px;
+        &::placeholder {
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    textarea {
+        &::placeholder {
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+        padding: 13px 17px;
+        border: none;
+        width: 350px;
+        background-color: #f1f4f5;
+        height: 190px;
+        width: 100%;
+        display: block;
+        resize: none;
+        margin-bottom: 23px;
+    }
+    button {
+        border: none;
+        font-size: 16px;
+        background-color: $green;
+        text-transform: uppercase;
+        @include f700;
+        padding: 20px 25px;
+        width: 190px;
+        color: #fff;
     }
 }
 
