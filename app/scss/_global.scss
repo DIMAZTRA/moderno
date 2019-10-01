@@ -8,18 +8,15 @@ html {
     box-sizing: inherit;
 }
 
-.fancybox-lock .fancybox-overlay {
-    overflow: auto;
-    overflow-y: scroll;
-}
-
 html {
-    position: relative;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
-    height: 100%;
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .wrapper {
